@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* main.css */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0; }
+
+.wrap {
+  border: 1px solid #ccc;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  /* 排列方向 row,column */
+  flex-wrap: wrap;
+  /* 是否换行 */
+  flex-flow: row wrap;
+  /* 上面俩的简写 */
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
+
+.wrap p {
+  width: 120px;
+  border: 1px solid #17c;
+  order: 2;
+  flex-grow: 1;
+  flex-shrink: 1; }
+
+.wrap p:nth-of-type(2) {
+  flex-grow: 2; }
+
+.wrap p:last-of-type {
+  order: 2; }
+
+.red {
+  background: #ab382f; }
+
+/*# sourceMappingURL=main.css.map */
